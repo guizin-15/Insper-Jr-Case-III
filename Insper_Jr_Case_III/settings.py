@@ -31,6 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #Jazzmin is the app installed to help with the admin customization, must always come first in the apps list if possible
+    'jazzmin',
+
     #Manually created apps for each page/function
     'user_create.apps.UserCreateConfig',
     'user_edit.apps.UserEditConfig',
