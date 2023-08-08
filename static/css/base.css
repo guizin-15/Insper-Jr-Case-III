@@ -1,12 +1,12 @@
 body {
     background-color: #FAFCFB;
     margin: 0;
-    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Marcellus', serif;
 }
 .header {
     display: flex;
     background-color: #F9D4C1;
-    height: 100px;
+    height: 90px;
     width: 100%;
     /* position: fixed; */
     top: 0;
@@ -16,18 +16,29 @@ body {
     align-items: center;
 }
 .logo {
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .menu {
-    margin-right: 40px;
+    margin-right: 60px;
 }
 .menu a {
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 14px;
     color: #000000;
     text-decoration: none;
 }
+.menu :hover {
+    text-decoration: underline;
+}
 img {
-    height: 90px;
+    height: 70px;
+}
+.logo_slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+    margin-bottom: 125px;
 }
