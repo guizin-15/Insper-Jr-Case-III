@@ -31,6 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #Manually created apps for each page/function
+    'user_create.apps.UserCreateConfig',
+    'user_edit.apps.UserEditConfig',
+    'appointments.apps.AppointmentsConfig',
+    'landing_page.apps.LandingPageConfig',
+    'login_page.apps.LoginPageConfig',
+
+    #Django built-in apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
