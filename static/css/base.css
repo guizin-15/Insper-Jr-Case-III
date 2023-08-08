@@ -1,0 +1,33 @@
+body {
+    background-color: #FAFCFB;
+    margin: 0;
+    font-family: 'Tenor Sans', sans-serif;
+}
+.header {
+    display: flex;
+    background-color: #F9D4C1;
+    height: 100px;
+    width: 100%;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 40px;
+}
+.menu {
+    margin-right: 40px;
+}
+.menu a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+img {
+    height: 90px;
+}

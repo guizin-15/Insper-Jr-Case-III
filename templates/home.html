@@ -1,29 +1,32 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
-    <title>JJ Estética Jovem - Home</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= stylesheet href="{% static 'css/base.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+        <title>JJ Estética Jovem - Home</title>
+    </head>
 <body>
     <div class="header">
         <div class="logo">
-            <img src="img/logo.png" alt="Logo JJ Estética Jovem">
-        </div>
+            <a href="/"><img src="{% static 'img/logo.png' %}"></a>
+        </div><!-- logo -->
         <div class="menu">
-            <ul>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Meus Serviços</a></li>
-                <li><a href="#">Meus Agendamentos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </div>
-    </div>
-    <h1>Teste</h1>
+                <a href="#sobre_nos">SOBRE NÓS</a>
+                <a href="#meus_servicos">MEUS SERVIÇOS</a>
+                <a href="#meus_agendamentos">MEUS AGENDAMENTOS</a>
+                <a href="#contato">CONTATO</a>
+                <a href="/accounts/login/">LOGIN</a>
+        </div><!-- menu -->
+    </div><!-- header -->
+    <div class="logo_slogan">
+        <h1>Teste</h1>
+    </div><!-- logo_slogan -->
 
 </body>
 </html>
