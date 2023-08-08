@@ -19,6 +19,5 @@ from django.urls import path
 from . import views # Importa as views do app landing_page
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.home_page, name='home')
 ]
