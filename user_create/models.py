@@ -7,7 +7,7 @@ from django.db import models
 class Profile(models.Model):
 
     #Especify the model as beign a One to One with the object(User)
-    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     #Declaration of every Tuple of choices that the user will have to complete:
     Genders = (
@@ -33,11 +33,11 @@ class Profile(models.Model):
     email = models.EmailField(max_length=254, null=True, blank=True, verbose_name='E-mail') 
 
     #Other fields
-    nickname = models.CharField(max_length=50, null=True, blank=True, verbose_name='Nome de exibição')
 
     #Profile img needs a place to be uploaded to, correction pendent
     # profile_img = models.ImageField(upload_to='WAITING FOR FILL', blank=True, null=True, verbose_name='Foto de Perfil')
-
+    
+    age = models.CharField(max_length=3, null=True, blank=True, verbose_name='Idade')
     birth = models.DateField(null=True, blank=True, verbose_name='Data de nascimento')
     phone_number = models.CharField(max_length=19, null=True, blank=True, verbose_name='Número de Telefone')
     gender = models.CharField(max_length=20, choices=Genders, null=True, blank=True, verbose_name='Gênero')
