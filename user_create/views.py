@@ -17,6 +17,7 @@ class UserRegister(CreateView):
         context['first_name'] = self.request.POST.get('first_name')
         context['last_name'] = self.request.POST.get('last_name')
         context['email'] = self.request.POST.get('email')
+        context['cpf'] = self.request.POST.get('cpf')
         context['username'] = self.request.POST.get('username')
 
         #Profile IMG, awaiting implementation

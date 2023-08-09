@@ -31,7 +31,7 @@ class Profile(models.Model):
     first_name = models.CharField(max_length=150, null=True, blank=True, verbose_name='Nome')
     last_name = models.CharField(max_length=150, null=True, blank=True, verbose_name='Sobrenome')
     email = models.EmailField(max_length=254, null=True, blank=True, verbose_name='E-mail') 
-
+    cpf = models.CharField(max_length=14, null=True, blank=True, verbose_name='CPF')
     #Other fields
 
     #Profile img needs a place to be uploaded to, correction pendent

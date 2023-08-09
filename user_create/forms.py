@@ -14,6 +14,7 @@ class UserRegisterForm(UserCreationForm):
     first_name = forms.CharField(max_length=150, required=True)
     last_name = forms.CharField(max_length=150, required=True)
     email = forms.EmailField(max_length=254, required=True)
+    cpf = forms.CharField(max_length=14, required=True)
 
     #Profile IMG field, waiting for implementation
     # profile_img = forms.ImageField(required=True)
@@ -31,6 +32,7 @@ class UserRegisterForm(UserCreationForm):
             'first_name',
             'last_name',
             'email',
+            'cpf',
             'password1',
             'password2',
             'birth',
@@ -51,6 +53,7 @@ class UserRegisterForm(UserCreationForm):
             Profile.objects.create(
                 user = user,
                 email = user.email,
+                cpf = self.cleaned_data['cpf'],
                 first_name = self.cleaned_data['first_name'],
                 last_name = self.cleaned_data['last_name'],
                 birth = self.cleaned_data['birth'],

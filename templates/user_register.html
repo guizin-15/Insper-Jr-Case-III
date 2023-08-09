@@ -20,6 +20,12 @@
         </p>
         </div>
 
+    <div class='cpf'>
+        <p> CPF
+        {{ form.cpf }}
+        </p>
+        </div>
+
     <div class='password1'>
         <p> Senha
         {{ form.password1 }}
@@ -31,6 +37,11 @@
         {{ form.password2 }}
         </p>
         </div>
+    <li> Sua senha deve conter pelo menos 8 caracteres </li>
+    <li> Sua senha não pode conter apenas numero </li>
+    <li> Sua senha não pode conter informações pessoais </li>
+
+
 
     <div class='birth'>
         <p> Data de Nascimento
