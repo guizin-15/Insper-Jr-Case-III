@@ -1,0 +1,36 @@
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    {% comment %} Here I divided each element of the form in its individual div, for more control when customizing in css {% endcomment %}
+    <div class='first-name'>
+        <p> Nome 
+        {{ form.first_name }}
+        </p>
+        </div>
+
+    <div class='last-name'>
+        <p> Sobrenome 
+        {{ form.last_name }}
+        </p>
+        </div>
+
+    <div class='email'>
+        <p> Email
+        {{ form.email }}
+        </p>
+        </div>
+
+    <div class='phone-number'>
+        <p> Numero de Telefone
+        {{ form.phone_number }}
+        </p>
+        </div>
+
+    <div class='gender'>
+        <p> Genero
+        {{ form.gender }}
+        </p>
+        </div>
+
+    <button type="submit" class="finalizar">Finalizar</button>
+</form>
