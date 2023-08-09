@@ -1,4 +1,5 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import logout
 from django.shortcuts import render, redirect
 from datetime import datetime
 from django.http import HttpResponse
@@ -47,3 +48,14 @@ def edit_profile(request):
 
 
     return render(request, 'user_edit.html', {'form': form, 'user': user, 'profile': profile})
+
+@login_required
+def view_profile(request):
+    user = request.user
+    profile = user.profile
+
+    return render(request, 'user_profile.html', {'user': user, 'profile': profile})
+
+def custom_logout(request):
+    logout(request)
+    return redirect('/')

@@ -19,8 +19,13 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/edit', include('user_edit.urls')),
-    path('accounts/profile', include('user_edit.urls')),
+#Here we use multiple url files for the same similar directories, because we cannot change the "accounts/" since we're using some of the django standard functions
+#So instead we gotta make multiple files to compensate with our own without overlapping.
+    path('accounts/logout/', include('user_edit.urls_logout')),
+    path('accounts/profile/', include('user_edit.urls_profile')),
+    path('accounts/edit/', include('user_edit.urls')),
+
+    path('agendamentos/', include('appointments.urls')),
     path('accounts/', include("django.contrib.auth.urls")),
     path('signup/', include('user_create.urls')),
     path('', include('landing_page.urls')),

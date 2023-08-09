@@ -42,7 +42,7 @@ def signup(request):
             profile.user_type = 'Usuario' #Automatically creates the user as 'Usuario', employees shall be created using admin page
             profile.save()
 
-            return redirect('/accounts/login/')  
+            return redirect('/accounts/login/')
     else:
         form = UserRegisterForm()
     return render(request, 'user_register.html', {'form': form})
