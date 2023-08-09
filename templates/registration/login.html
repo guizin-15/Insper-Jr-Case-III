@@ -44,6 +44,16 @@
         .login-form input[type="submit"]:hover {
             background-color: #733250;
         }
+
+        .login-button {
+            background-color: #000000;
+            color: #FFFFFF;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            height: 35px;
+        }
+
     </style>
 </head>
 <body>
@@ -66,7 +76,8 @@
         {{ form.password }}
     </div>
 
-    <input type="submit" value="Login">
+    <button type="submit" class='login-button'> Login </button> <br>
+    <a href='/signup'>Registre-se</a>
     <input type="hidden" name="next" value="{{ next }}">
 </form>
 
