@@ -9,9 +9,6 @@ class UserEditForm(UserChangeForm):
     last_name = forms.CharField(max_length=150, required=True)
     email = forms.EmailField(max_length=100, required=True)
 
-    #Profile image awaiting implementation
-    #profile_img = forms.ImageField(required=False)
-
     phone_number = forms.CharField(max_length=19, required=True)
     gender = forms.ChoiceField(choices=Profile.Genders, required=True)
 

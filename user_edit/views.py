@@ -11,16 +11,13 @@ def edit_profile(request):
     user = request.user
     profile = user.profile
 
-    #Image code, still awaiting implementation
-    # img = profile.foto_perfil
-    # img_user = "/".join(str(img).split('/')[2:])
 
     if request.method == 'POST':
         #Keeps updating the user age, need to repeat this code through the program to alway keep it updated
         age_delta = datetime.now().date() - profile.birth
         profile.age = age_delta.days // 365
 
-        form = forms.UserEditForm(request.POST, request.FILES, instance=user)
+        form = forms.UserEditForm(request.POST, instance=user)
         if form.is_valid():
             user.first_name = form.cleaned_data['first_name']
             user.last_name = form.cleaned_data['last_name']

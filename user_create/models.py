@@ -20,7 +20,7 @@ class Profile(models.Model):
     User_types = (
         ('Usuario', 'Usuario'),
         ('Funcionario', 'Funcionario'),
-        ('Administrador', 'Administrado'),
+        ('Administrador', 'Administrador'),
     )
 
 
@@ -32,11 +32,7 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=150, null=True, blank=True, verbose_name='Sobrenome')
     email = models.EmailField(max_length=254, null=True, blank=True, verbose_name='E-mail') 
     cpf = models.CharField(max_length=14, null=True, blank=True, verbose_name='CPF')
-    #Other fields
-
-    #Profile img needs a place to be uploaded to, correction pendent
-    # profile_img = models.ImageField(upload_to='WAITING FOR FILL', blank=True, null=True, verbose_name='Foto de Perfil')
-    
+    #Other fields    
     age = models.CharField(max_length=3, null=True, blank=True, verbose_name='Idade')
     birth = models.DateField(null=True, blank=True, verbose_name='Data de nascimento')
     phone_number = models.CharField(max_length=19, null=True, blank=True, verbose_name='Número de Telefone')
