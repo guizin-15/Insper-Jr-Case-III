@@ -8,25 +8,25 @@
         <link rel= stylesheet href="{% static 'css/base.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
         <title>JJ Estética Jovem - Home</title>
     </head>
 <body>
     <div class="header">
         <div class="logo">
-            <a href="/"><img src="{% static 'img/logo.png' %}"></a>
+            <a href="/"><img src="{% static 'img/logo_jj.jpeg' %}"></a>
         </div><!-- logo -->
         <div class="menu">
             {% if user.is_authenticated %}
                 <a href="#sobre_nos">SOBRE NÓS</a>
-                <a href="#meus_servicos">SERVIÇOS</a>
+                <a href="#servicos">SERVIÇOS</a>
                 <a href="/agendamentos/">AGENDAMENTOS</a>
                 <a href="#contato">CONTATO</a>
                 <a href='/accounts/profile'> PERFIL </a>
                 <a href='/accounts/logout'> LOGOUT </a>
             {% else %}
                 <a href="#sobre_nos">SOBRE NÓS</a>
-                <a href="#meus_servicos">SERVIÇOS</a>
+                <a href="#servicos">SERVIÇOS</a>
                 <a href="/accounts/login/">AGENDAMENTOS</a>
                 <a href="#contato">CONTATO</a>
                 <a href="/accounts/login/"> LOGIN </a>
@@ -34,10 +34,24 @@
 
         </div><!-- menu -->
     </div><!-- header -->
-    <div class="logo_slogan">
-        <h1>JJ ESTÉTICA JOVEM</h1>
-        <h2>Onde o Luxo se Encontra com a Estética</h2>
-    </div><!-- logo_slogan -->
+    <div id="sobre_nos" class="sobre_nos">
+        <div class="img_shadow">
+            <img class="img_sobre_nos" src="{% static 'img/sobre_nos.jpeg' %}">
+        </div>
+        <p>SOBRE NÓS</p>
+    </div><!--sobre_nos-->
+    <div class="lower_sobre_nos">
+        <div class="text_sobre_nos">
+            <p class="title">JJ Estética Jovem: O Seu Refúgio Personalizado para Beleza e Bem-Estar</p>
+            <p class="core_text">Bem-vindo à JJ Estética Jovem, onde sua beleza e bem-estar são cuidadosamente cultivados. Nossa equipe experiente está dedicada a proporcionar uma experiência única, onde cada tratamento é adaptado às suas necessidades exclusivas.</p>
+            <p class="core_text">Desde a sua primeira consulta, onde ouvimos atentamente sua história e avaliamos suas necessidades, até a seleção cuidadosa de serviços, respaldados por anos de expertise dermatológica, nosso objetivo é criar uma jornada de cuidados estéticos personalizados.</p>
+            <p class="core_text">Aqui na JJ Estética Jovem, sua pele é o centro das atenções e seu bem-estar é nossa paixão genuína.</p>
+        </div><!--texto_sobre_nos-->
+        <div class="side_img_sobre_nos">
+            <img class="img_sobre_nos" src="{% static 'img/sobre_nos_text.jpeg' %}">
+        </div><!--side_img_sobre_nos-->
+    </div><!--lower_sobre_nos-->
+    
 
 </body>
 </html>
