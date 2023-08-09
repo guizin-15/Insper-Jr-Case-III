@@ -16,9 +16,6 @@ class UserRegisterForm(UserCreationForm):
     email = forms.EmailField(max_length=254, required=True)
     cpf = forms.CharField(max_length=14, required=True)
 
-    #Profile IMG field, waiting for implementation
-    # profile_img = forms.ImageField(required=True)
-
     password1 = forms.CharField(max_length=100, required=True, widget=forms.PasswordInput)
     password2 = forms.CharField(max_length=100, required=True, widget=forms.PasswordInput)
     birth = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}), required=True)
