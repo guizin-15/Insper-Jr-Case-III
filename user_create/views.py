@@ -34,7 +34,7 @@ def signup(request):
         form = forms.UserRegisterForm(request.POST, request.FILES)
         if form.is_valid():
             user = form.save()
-            user.username = user.first_name + ' ' + user.last_name #Saves the username as first + last name
+            user.username = user.email #Saves the username as email, database sided only for login purpouses.
             user.save() 
 
             profile = user.profile
