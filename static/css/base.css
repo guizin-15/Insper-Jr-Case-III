@@ -199,8 +199,9 @@ body {
     color: rgb(0, 0, 0);
     text-align: center;
     justify-content: center;
+    align-items: center;
     margin: 20px;
-    height: 30px
+    height: 50px
 }
 .box_servico{
     display: flex;
@@ -284,4 +285,18 @@ body {
     font-size: 24px;
     color: rgb(80, 80, 80);
     align-items: center;
+}
+
+.procedure_type {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #643e66;
+    cursor: default;
 }
