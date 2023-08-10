@@ -8,11 +8,11 @@ body {
     justify-content: center;
     align-items: center; 
 }
-/* profile.css */
 
 .profile-img {
     width: 100%; /* Altere aqui */
-    /* height: 300px; Mantenha a altura desejada */
+    height: 300px; 
+    margin-top: -140px;
 }
 
 .img_shadow {
@@ -25,9 +25,9 @@ body {
 
 .form-container {
     background-color: #f0f0f0; /* Cor cinza clara */
-    border-radius: 15px; /* Cantos arredondados */
+    border-radius: 20px; /* Cantos arredondados */
     padding: 20px; /* Espaçamento interno */
-    margin-top: 4%; /* Espaçamento superior */
+    margin-top: 20px; /* Espaçamento superior */
     width: 80%; /* Largura da caixa de formulários */
     max-width: 800px; /* Largura máxima */
 }
@@ -43,10 +43,43 @@ body {
 }
 
 .form-item {
-    background-color: white; /* Cor de fundo branca para cada item do formulário */
-    border-radius: 10px; /* Cantos arredondados para os itens */
-    padding: 5px 15px; /* Espaçamento interno */
-    margin: 20px 20px; /* Espaçamento entre os itens */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px 10px; /* Espaçamento interno */
+    margin: 1px 1px; /* Espaçamento entre os itens */
+}
+
+.form-item label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 15px; /* Espaçamento interno */
+}
+
+
+.form-item p {
+        margin: 0; /* Remova a margem padrão */
+        color: #9e9e9e; /* Mantém o texto do rótulo em cinza */
+}
+
+.label {
+    color: #f0f0f0; /* Cor cinza clara para os rótulos */
+}
+
+.input-box {
+    width: 100%;
+    height: 45px;
+    width: 100%;
+    border-radius: 100px;
+    border: none; /* Remova a borda interna */
+    padding: 0px 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: solid 1px #343F4B; /* Adicione a borda */
 }
 
 .left {
@@ -58,7 +91,7 @@ body {
 }
 
 .links {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 
@@ -81,19 +114,19 @@ h4 {
 }
 
 .circle {
-    width: 190px; /* Largura do círculo */
-    height: 190px; /* Altura do círculo */
+    width: 175px; /* Largura do círculo */
+    height: 175px; /* Altura do círculo */
     background-color: #ff9900; /* Cor do círculo (por exemplo, laranja) */
     border-radius: 50%; /* Torna o elemento um círculo */
     position: absolute;
-    top: 40%; /* Ajuste a posição vertical para ir mais para cima */
+    top: 17%; /* Ajuste a posição vertical para ir mais para cima */
     left: 10%; /* Posiciona no centro horizontal */
 }
 
 .message {
-    font-size: 24px; /* Tamanho da fonte */
+    font-size: 26px; /* Tamanho da fonte */
     font-weight: bold; /* Texto em negrito */
-    margin-top: 30px; /* Ajuste a posição vertical para mover para baixo */
+    margin-top: 20px; /* Ajuste a posição vertical para mover para baixo */
     text-align: center; /* Centraliza o texto horizontalmente */
 }
 

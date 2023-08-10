@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,30 +25,54 @@
         <div class="container">
             <div class="column left">
                 <div class="form-item">
-                    <p>Nome: {{ profile.first_name }}</p>
+                    <label class="input-box">
+                        <p>Nome:</p>
+                        {{ profile.first_name }}
+                    </label>
                 </div>
                 <div class="form-item">
-                    <p>Sobrenome: {{ profile.last_name }}</p>
+                    <label class="input-box">
+                        <p>Sobrenome:</p>
+                        {{ profile.last_name }}
+                    </label>
                 </div>
                 <div class="form-item">
-                    <p>Email: {{ profile.email }}</p>
+                    <label class="input-box">
+                        <p>Email:</p>
+                        {{ profile.email }}
+                    </label>
                 </div>
                 <div class="form-item">
-                    <p>CPF: {{ profile.cpf }}</p>
+                    <label class="input-box">
+                        <p>CPF:</p>
+                        {{ profile.cpf }}
+                    </label>
                 </div>
             </div>
             <div class="column right">
                 <div class="form-item">
-                    <p>Idade: {{ profile.age }}</p>
+                    <label class="input-box">
+                        <p>Idade:</p>
+                        {{ profile.age }}
+                    </label>
                 </div>
                 <div class="form-item">
-                    <p>Data de Nascimento: {{ profile.birth }}</p>
+                    <label class="input-box">
+                        <p>Data de Nascimento:</p>
+                        {{ profile.birth }}
+                    </label>
                 </div>
                 <div class="form-item">
-                    <p>Numero de Telefone: {{ profile.phone_number }}</p>
+                    <label class="input-box">
+                        <p>Telefone:</p>
+                        {{ profile.phone_number }}
+                    </label>
                 </div>
                 <div class="form-item">
-                    <p>Gênero: {{ profile.gender }}</p>
+                    <label class="input-box">
+                        <p>Gênero:</p>
+                        {{ profile.gender }}
+                    </label>
                 </div>
             </div>
         </div>
