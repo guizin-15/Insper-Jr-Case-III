@@ -17,6 +17,7 @@
         </div><!-- logo -->
         <div class="menu">
             {% if user.is_authenticated %}
+                <a href="/">HOME</a>
                 <a href="/#sobre_nos">SOBRE NÓS</a>
                 <a href="/#servicos">SERVIÇOS</a>
                 <a href="/agendamentos/">AGENDAMENTOS</a>
@@ -44,7 +45,6 @@
     </div>    
     <div class="message">
         <p>Olá {{ profile.first_name }} {{ profile.last_name }}, seja sempre bem-vindo!</p>
-        <a class= "home-link" href="/"> Voltar a Home </a>
     </div>
     <div class="form-container">
         <div class="container">
@@ -103,7 +103,7 @@
         </div>
     </div>
     <div class="links">
-        <a href='/accounts/edit'>Editar informações</a>
+        <a href='/accounts/edit'>Editar Informações</a>
     </div>
 </body>
 </html>
