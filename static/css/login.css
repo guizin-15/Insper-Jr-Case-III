@@ -1,0 +1,178 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------------- */
+
+.header {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.logo {
+    margin-left: 60px;
+}
+.menu {
+    margin-right: 60px;
+}
+.menu a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.menu :hover {
+    text-decoration: underline;
+}
+.logo img {
+    height: 70px;
+}
+
+/* -------------------------------- */
+
+.img_sobre_nos {
+    width: 100%;
+    height: 380px;
+    margin-top:0px;
+}
+.img_shadow{
+    display: flex;
+    width: 100%;
+    height: 380px;
+    margin-top:0px;
+}
+.img_shadow::before{
+    display: flex;
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    width: 100%;
+    height: 380px;
+    margin-top:0px;
+}
+.img_shadow p {
+    display: flex;
+    color: white;
+    font-size: 36px;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    margin-top: 140px;
+}
+
+/* -------------------------------- */
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    padding: 40px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    z-index: 1;
+    position: relative;
+    top: -150px;
+    
+}
+
+.inputs-container {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-box {
+    width: 100%;
+    height: 45px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 100px;
+    border: solid 1px #343F4B;
+    padding: 0px 20px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+} 
+
+.input-box p {
+    font-size: 13px;
+    color: #969FAA;
+    white-space: nowrap;
+}
+
+.input-box input, .input-box select {
+    background-color: none;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
+}
+
+/* -------------------------------- */
+
+.checkbox-container {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.login_button {
+    color: white;
+    width: 195px;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(80, 80, 80);
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* -------------------------------- */
+
+.cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0px;
+    text-decoration: underline;
+}
+.cadastrar:hover {
+    color: rgb(80, 80, 80);
+}
