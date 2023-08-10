@@ -5,23 +5,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= stylesheet href="{% static 'css/profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>JJ Estética Jovem - Perfil</title>
 </head>
 <body>
-    Nome: {{ profile.first_name }} <br>
-    Sobrenome: {{ profile.last_name }} <br>
-    Email: {{ profile.email }} <br>
-    CPF: {{ profile.cpf }} <br>
-    Idade: {{ profile.age }} <br>
-    Data de Nascimento: {{ profile.birth }} <br>
-    Numero de Telefone: {{ profile.phone_number }} <br>
-    Gênero: {{ profile.gender }} <br>
 
-    <h4> Clique <a href='/accounts/edit'>Aqui</a> para editar informações incorretas </h4>
-    <a href="/"> Home </a>
+    <div class="profile-img">
+        <div class="img_shadow">
+            <img class="img_sobre_nos" src="{% static 'img/sobre_nos.jpeg' %}">
+        </div>
+        <div class="circle"></div>
+    </div>    
+    <div class="message">
+        <p>Olá {{ profile.first_name }} {{ profile.last_name }}, seja sempre bem-vindo!</p>
+    </div>
+    <div class="form-container">
+        <div class="container">
+            <div class="column left">
+                <div class="form-item">
+                    <p>Nome: {{ profile.first_name }}</p>
+                </div>
+                <div class="form-item">
+                    <p>Sobrenome: {{ profile.last_name }}</p>
+                </div>
+                <div class="form-item">
+                    <p>Email: {{ profile.email }}</p>
+                </div>
+                <div class="form-item">
+                    <p>CPF: {{ profile.cpf }}</p>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="form-item">
+                    <p>Idade: {{ profile.age }}</p>
+                </div>
+                <div class="form-item">
+                    <p>Data de Nascimento: {{ profile.birth }}</p>
+                </div>
+                <div class="form-item">
+                    <p>Numero de Telefone: {{ profile.phone_number }}</p>
+                </div>
+                <div class="form-item">
+                    <p>Gênero: {{ profile.gender }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="links">
+        <h4><a href='/accounts/edit'>Editar informações</a></h4>
+        <a class= "home-link" href="/"> Voltar a Home </a>
+    </div>    
 </body>
 </html>
