@@ -13,8 +13,8 @@
     </head>
 <body>
     <div class="header">
-        <div class="logo">
-            <a href="/"><img src="{% static 'img/logo_jj.jpeg' %}"></a>
+        <div id="home" class="logo">
+            <a href="#home"><img src="{% static 'img/logo_jj.jpeg' %}"></a>
         </div><!-- logo -->
         <div class="menu">
             {% if user.is_authenticated %}
@@ -97,6 +97,25 @@
             </div>
         </div><!--serv_4-->
     </div><!--servicos_body-->
+    <div id="contato" class="footer">
+        <div class="footer_logo">
+            <a href="#home"><img src="{% static 'img/logo_jj_bw.jpeg' %}"></a>
+        </div><!-- footer_logo -->
+        <div class="adress_and_number">
+            <p class="adress">Rua Quatá, 200</p>
+            <p class="adress">Vila Olímpia</p>
+            <p class="adress">São Paulo - SP</p>
+            <p class="number">(11) 99999-9999</p>
+        </div><!-- adress_and_number -->
+        <div class="social_media">
+            <div class="instagram">
+                <a href="https://www.instagram.com/"><img class="social_media_icon" src="{% static 'img/instagram.png' %}">@jj_estetica_jovem</a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.facebook.com/"><img class="social_media_icon" src="{% static 'img/facebook.png' %}">JJ Estética Jovem</a>
+            </div>
+        </div><!-- social_media -->
+    </div><!-- footer -->
 </body>
 </html>
 

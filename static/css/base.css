@@ -247,6 +247,7 @@ body {
     border-top: 1px solid rgb(200, 200, 200);
     width: 100%;
     height: 200px;
+    justify-content: space-evenly;
 }
 .footer_logo{
     display: flex;
@@ -257,5 +258,34 @@ body {
 .footer_logo img{
     display: flex;
     height: 200px;
-
+}
+.social_media_icon{
+    height: 40px;
+    margin: 15px;
+}
+.social_media{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+}
+.social_media a{
+    display: flex;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    align-items: center;
+}
+.adress_and_number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.adress_and_number p{
+    display: flex;
+    font-size: 24px;
+    color: rgb(80, 80, 80);
+    align-items: center;
 }
