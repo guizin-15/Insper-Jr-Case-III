@@ -39,57 +39,62 @@
             <p>CADASTRO</p>
         </div>
 
-        <form method="POST" enctype="multipart/form-data" class="register-form">
-            {% csrf_token %}
+    <form method="POST" enctype="multipart/form-data" class="register-form">
+        {% csrf_token %}
+    
+        <div class="inputs-container">
+            <label class='first-name input-box' for="i1">
+                <p> Nome </p>
+                {{ form.first_name }}
+            </label>
         
-            <div class="inputs-container">
-                <label class='first-name input-box' for="i1">
-                    <p> Nome </p>
-                    {{ form.first_name }}
-                </label>
-            
-                <label class='last-name input-box'  for="i2">
-                    <p> Sobrenome</p>
-                    {{ form.last_name }}
-                </label>
-            
-                <label class='email input-box' for="i3">
-                    <p> Email</p>
-                    {{ form.email }}
-                </label>
-            
-                <label class='cpf input-box' for="i4">
-                    <p> CPF</p>
-                    {{ form.cpf }}
-                </label>
-            
-                <label class='password1 input-box' for="i5">
-                    <p> Senha</p>
-                    {{ form.password1 }}
-                </label>
-            
-                <label class='password2 input-box' for="i6">
-                    <p> Confirme a Senha</p>
-                    {{ form.password2 }}
-                </label>
-            
-                <label class='birth input-box' for="i7">
-                    <p> Data de Nascimento</p>
-                    {{ form.birth }}
-                </label>
-            
-                <label class='phone-number input-box' for="i8">
-                    <p> Numero de Telefone</p>
-                    {{ form.phone_number }}
-                </label>
-            
-                <label class='gender input-box' for="i9">
-                    <p> Gênero </p>
-                    {{ form.gender }}
-                </label>
-            </div>
-            
-            <button type="submit" class="submit-button">Finalizar</button>
-        </form>
-    </div>
+            <label class='last-name input-box'  for="i2">
+                <p> Sobrenome</p>
+                {{ form.last_name }}
+            </label>
+        
+            <label class='email input-box' for="i3">
+                <p> Email</p>
+                {{ form.email }}
+            </label>
+        
+            <label class='cpf input-box' for="i4">
+                <p> CPF</p>
+                {{ form.cpf }}
+            </label>
+        
+            <label class='password1 input-box' for="i5">
+                <p> Senha</p>
+                {{ form.password1 }}
+            </label>
+        
+            <label class='password2 input-box' for="i6">
+                <p> Confirme a Senha</p>
+                {{ form.password2 }}
+            </label>
+        
+            <label class='birth input-box' for="i7">
+                <p> Data de Nascimento</p>
+                {{ form.birth }}
+            </label>
+        
+            <label class='phone-number input-box' for="i8">
+                <p> Numero de Telefone</p>
+                {{ form.phone_number }}
+            </label>
+        
+            <label class='gender input-box' for="i9">
+                <p> Gênero </p>
+                {{ form.gender }}
+            </label>
+            <label class='profile-img input-box' for="i8">
+                <p> Foto de Perfil</p>
+                {{ form.profile_img }}
+            </label>
+        </div>
+        
+        <button type="submit" class="finalizar submit-button">Finalizar</button>
+    </form>
+</div>
 </body>
+<script src="{% static 'code/signup.js' %}"></script>

@@ -18,6 +18,8 @@ class UserRegisterForm(UserCreationForm):
 
     password1 = forms.CharField(max_length=100, required=True, widget=forms.PasswordInput(attrs={"id": "i5"}))
     password2 = forms.CharField(max_length=100, required=True, widget=forms.PasswordInput(attrs={"id": "i6"}))
+    
+    profile_img = forms.ImageField(required=True)
     birth = forms.DateField(widget=forms.DateInput(attrs={'type': 'date', "id": "i7"}), required=True,)
     phone_number = forms.CharField(max_length=19, required=True, widget=forms.TextInput(attrs={'id': 'i8'}))
     gender = forms.ChoiceField(choices=Profile.Genders, required=True, widget=forms.Select(attrs={'id': 'i9'}))
@@ -32,6 +34,7 @@ class UserRegisterForm(UserCreationForm):
             'cpf',
             'password1',
             'password2',
+            'profile_img',
             'birth',
             'phone_number',
             'gender',
@@ -53,6 +56,7 @@ class UserRegisterForm(UserCreationForm):
                 cpf = self.cleaned_data['cpf'],
                 first_name = self.cleaned_data['first_name'],
                 last_name = self.cleaned_data['last_name'],
+                profile_img = self.cleaned_data['profile_img'],
                 birth = self.cleaned_data['birth'],
                 phone_number = self.cleaned_data['phone_number'],
                 gender = self.cleaned_data['gender'],

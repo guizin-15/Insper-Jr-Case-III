@@ -32,7 +32,8 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=150, null=True, blank=True, verbose_name='Sobrenome')
     email = models.EmailField(max_length=254, null=True, blank=True, verbose_name='E-mail') 
     cpf = models.CharField(max_length=14, null=True, blank=True, verbose_name='CPF')
-    #Other fields    
+    #Other fields
+    profile_img = models.ImageField(upload_to='static/profile_img', blank=True, null=True, verbose_name='Profile Image') 
     age = models.CharField(max_length=3, null=True, blank=True, verbose_name='Idade')
     birth = models.DateField(null=True, blank=True, verbose_name='Data de nascimento')
     phone_number = models.CharField(max_length=19, null=True, blank=True, verbose_name='Número de Telefone')

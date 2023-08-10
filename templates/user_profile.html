@@ -38,7 +38,9 @@
             <img class="img_sobre_nos" src="{% static 'img/sobre_nos.jpeg' %}">
             <p>PERFIL</p>
         </div>
-        <div class="circle"></div>
+        <div class="circle"> 
+            <img src="{{ profile_img }}" class="profile_img">    
+        </div>
     </div>    
     <div class="message">
         <p>Olá {{ profile.first_name }} {{ profile.last_name }}, seja sempre bem-vindo!</p>
