@@ -123,6 +123,11 @@ h4 {
     left: 10%; /* Posiciona no centro horizontal */
 }
 
+.profile-img {
+    width: 100%;
+    height: 100%;
+}
+
 .message {
     font-size: 26px; /* Tamanho da fonte */
     font-weight: bold; /* Texto em negrito */

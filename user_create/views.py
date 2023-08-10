@@ -20,6 +20,7 @@ class UserRegister(CreateView):
         context['cpf'] = self.request.POST.get('cpf')
         context['username'] = self.request.POST.get('username')
 
+        context['profile_img'] = self.request.POST.get('profile_img')
         context['birth'] = self.request.POST.get('birth')
         context['phone_number'] = self.request.POST.get('phone_number')
         context['gender'] = self.request.POST.get('gender')
@@ -30,7 +31,7 @@ class UserRegister(CreateView):
 
 def signup(request):
     if request.method == "POST":
-        form = forms.UserRegisterForm(request.POST)
+        form = forms.UserRegisterForm(request.POST, request.FILES)
         if form.is_valid():
             user = form.save()
             user.username = user.first_name + ' ' + user.last_name #Saves the username as first + last name

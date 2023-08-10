@@ -18,7 +18,7 @@ def edit_profile(request):
         age_delta = datetime.now().date() - profile.birth
         profile.age = age_delta.days // 365
 
-        form = forms.UserEditForm(request.POST, instance=user)
+        form = forms.UserEditForm(request.POST, request.FILES, instance=user)
         if form.is_valid():
             user.first_name = form.cleaned_data['first_name']
             user.last_name = form.cleaned_data['last_name']
@@ -29,6 +29,9 @@ def edit_profile(request):
             profile.email = form.cleaned_data['email']
             profile.phone_number = form.cleaned_data['phone_number']
             profile.gender = form.cleaned_data['gender']
+
+            if request.FILES.get('profile_img') != None:
+                profile.profile_img = request.FILES.get('profile_img')
 
             profile.save()
             user.save()
@@ -53,8 +56,10 @@ def edit_profile(request):
 def view_profile(request):
     user = request.user
     profile = user.profile
+    img = profile.profile_img
+    profile_img = "/" + str(img)
 
-    return render(request, 'user_profile.html', {'user': user, 'profile': profile})
+    return render(request, 'user_profile.html', {'user': user, 'profile': profile, 'profile_img': profile_img,})
 
 def custom_logout(request):
     logout(request)
