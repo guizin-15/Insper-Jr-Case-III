@@ -40,23 +40,6 @@
         <p>LOGIN</p>
     </div><!-- img_shadow -->
 
-
-<!-- <form class="login-form" method="post" action="{% url 'login' %}">
-    {% csrf_token %}
-    <div>
-        {{ form.username.label_tag }}
-        {{ form.username }}
-    </div>
-
-    <div>
-        {{ form.password.label_tag }}
-        {{ form.password }}
-    </div>
-
-    <button type="submit" class='login-button'> Login </button> <br>
-    <a href='/signup' class="cadastrar">Ainda não tem conta? Cadastre-se!</a>
-    <input type="hidden" name="next" value="{{ next }}">
-</form> -->
 <form method="POST" enctype="multipart/form-data" class="login-form">
     {% csrf_token %}
     <div class="inputs-container">

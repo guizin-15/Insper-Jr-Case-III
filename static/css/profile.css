@@ -28,7 +28,7 @@ body {
     border-radius: 20px; /* Cantos arredondados */
     padding: 20px; /* Espaçamento interno */
     margin-top: 20px; /* Espaçamento superior */
-    width: 80%; /* Largura da caixa de formulários */
+    width: 100%; /* Largura da caixa de formulários */
     max-width: 800px; /* Largura máxima */
 }
 
@@ -71,7 +71,6 @@ body {
 .input-box {
     width: 100%;
     height: 45px;
-    width: 100%;
     border-radius: 100px;
     border: none; /* Remova a borda interna */
     padding: 0px 20px;
@@ -79,6 +78,20 @@ body {
     display: flex;
     align-items: center;
     border: solid 1px #343F4B; /* Adicione a borda */
+}
+
+.input-box p {
+    font-size: 13px;
+    color: #969FAA;
+    white-space: nowrap;
+}
+
+.input-box input, .input-box select {
+    background-color: none;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    width: 100%;
 }
 
 .left {
@@ -94,7 +107,7 @@ body {
     margin-bottom: 100px;
 }
 
-.links a {
+.links a, .links button{
     display: flex;
     text-decoration: none;
     justify-content: center;
