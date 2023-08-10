@@ -122,6 +122,11 @@ h4 {
     top: 17%; /* Ajuste a posição vertical para ir mais para cima */
     left: 10%; /* Posiciona no centro horizontal */
 }
+.profile_img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
 
 .profile-img {
     width: 100%;
