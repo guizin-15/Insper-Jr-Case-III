@@ -1,15 +1,20 @@
+/* Definições gerais para resetar margens, preenchimento e caixa de dimensionamento */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos globais para o corpo do documento */
 body {
     background-color: white;
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+
+/* Estilos para o cabeçalho */
 .header {
+    /* Layout e posicionamento */
     display: flex;
     height: 90px;
     width: 100%;
@@ -29,19 +34,24 @@ body {
     margin-right: 60px;
 }
 .menu a {
+    /* Espaçamento e estilo para links no menu */
     margin-left: 20px;
     margin-right: 20px;
     font-size: 16px;
     color: rgb(80, 80, 80);
     text-decoration: none;
 }
-.menu :hover {
+.menu a:hover {
+    /* Estilo para links no menu quando passa o mouse */
     text-decoration: underline;
 }
 .logo img {
     height: 70px;
 }
+
+/* Estilos para a seção 'Sobre Nós' */
 .sobre_nos {
+    /* Layout e posicionamento */
     width: 100%;
     display: flex;
     align-items: center;
@@ -52,12 +62,14 @@ body {
     width: 100%;
     height: 300px;
 }
-.img_shadow{
+.img_shadow {
+    /* Sombra sobre a imagem */
     display: flex;
     width: 100%;
-    height: 300px
+    height: 300px;
 }
-.img_shadow::before{
+.img_shadow::before {
+    /* Estilo da sombra */
     display: flex;
     content: "";
     position: absolute;
@@ -67,6 +79,7 @@ body {
     z-index: 1;
 }
 .sobre_nos p {
+    /* Texto sobre a imagem */
     display: flex;
     color: white;
     font-size: 36px;
@@ -76,15 +89,16 @@ body {
     justify-content: center;
     z-index: 2;
 }
-.lower_sobre_nos{
+.lower_sobre_nos {
     display: flex;
     width: 100%;
     flex-direction: row;
 }
-.text_sobre_nos{
-    width:65%
+.text_sobre_nos {
+    width: 65%;
 }
-.core_text{
+.core_text {
+    /* Estilo do texto principal */
     padding-left: 60px;
     font-size: 24px;
     width: 90%;
@@ -93,7 +107,8 @@ body {
     color: rgb(80, 80, 80);
     margin-bottom: 20px;
 }
-.title{
+.title {
+    /* Estilo do título */
     padding-left: 60px;
     font-size: 28px;
     font-weight: bold;
@@ -101,43 +116,52 @@ body {
     width: 70%;
     margin: 20px 0px;
 }
-.side_img_sobre_nos{
+.side_img_sobre_nos {
+    /* Imagem ao lado no 'Sobre Nós' */
     display: flex;
-    width:35%;
+    width: 35%;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 60px;
     margin-right: 60px;
 }
-.side_img_sobre_nos img{
+.side_img_sobre_nos img {
+    /* Estilo da imagem ao lado */
     display: flex;
-    width:450px;
+    width: 450px;
     height: 450px;
     border-radius: 50%;
     overflow: hidden;
 }
-.logo_2{
+
+/* Estilos para a segunda logo */
+.logo_2 {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.logo_2 img{
+.logo_2 img {
     height: 200px;
 }
+
+/* Estilos para a seção 'Serviços' */
 .servicos_head {
+    /* Cabeçalho da seção 'Serviços' */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.img_shadow_servicos{
+.img_shadow_servicos {
+    /* Sombra sobre a imagem de cabeçalho dos 'Serviços' */
     display: flex;
     width: 100%;
     height: 370px;
     overflow: hidden;
 }
-.img_shadow_servicos::before{
+.img_shadow_servicos::before {
+    /* Estilo da sombra */
     display: flex;
     content: "";
     position: absolute;
@@ -148,6 +172,7 @@ body {
     z-index: 1;
 }
 .servicos_head p {
+    /* Texto sobre a imagem de cabeçalho dos 'Serviços' */
     display: flex;
     color: white;
     font-size: 36px;
@@ -157,14 +182,15 @@ body {
     justify-content: center;
     z-index: 2;
 }
-.img_servicos{
+.img_servicos {
     width: 100%;
-    height:100%;
+    height: 100%;
 }
 
-.logo_1{
+/* Estilos para a primeira logo */
+.logo_1 {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 320px;
     align-items: center;
     justify-content: center;
@@ -172,13 +198,15 @@ body {
     margin-top: 90px;
     padding-bottom: -100px;
 }
-.logo_1 img{
+.logo_1 img {
     height: 300px;
 }
 .logo_1 p {
     font-size: 36px;
 }
-.servicos_body{
+
+/* Estilos para o corpo da seção 'Serviços' */
+.servicos_body {
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -186,13 +214,15 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.servicos_body img{
+.servicos_body img {
+    /* Imagens dos serviços */
     display: flex;
     width: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
 .servicos_body h1 {
+    /* Títulos dos serviços */
     display: flex;
     font-size: 24px;
     font-weight: bold;
@@ -201,16 +231,19 @@ body {
     justify-content: center;
     align-items: center;
     margin: 20px;
-    height: 50px
+    height: 50px;
 }
-.box_servico{
+
+.box_servico {
+    /* Caixa de cada serviço */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 250px;
 }
-.link_agendar{
+.link_agendar {
+    /* Link para agendar */
     display: flex;
     width: 120px;
     height: 36px;
