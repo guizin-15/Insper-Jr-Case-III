@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
     <link rel="stylesheet" href="{% static 'css/appointments.css' %}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +36,39 @@
 
         </div><!-- menu -->
     </div><!-- header -->
+    <div class="img_shadow">
+        <img class="img_sobre_nos" src="{% static 'img/sobre_nos.jpeg' %}">
+        <p style="margin-top: 200px;">AGENDAMENTOS</p>
+    </div>
+
+    <div class="content"> 
+        <img src="{{ profile_img }}" alt="" class="profile-img">
+        <img src="{% static 'img/logo_jj_roxo.jpeg' %}" class="co-logo">
+
+        <h1 class="main-title">Meus agendamentos</h1>
+
+        <div class="services-container">
+            <div class="service-box">
+                <p class="info"><strong>Serviço: </strong> Botox</p>
+                <p class="info"><strong>Profissional: </strong> Dr. Jonatas</p>
+
+                <span class="date">01 de abril às 15:00</span>
+            </div>
+            <div class="service-box">
+                <p class="info"><strong>Serviço: </strong> Botox</p>
+                <p class="info"><strong>Profissional: </strong> Dr. Jonatas</p>
+
+                <span class="date">01 de abril às 15:00</span>
+            </div>
+            <div class="service-box">
+                <p class="info"><strong>Serviço: </strong> Botox</p>
+                <p class="info"><strong>Profissional: </strong> Dr. Jonatas</p>
+
+                <span class="date">01 de abril às 15:00</span>
+            </div>
+        </div>
+    </div>
+    
 </body>
 
 <script src="{% static 'code/base.js' %}"></script>
