@@ -1,0 +1,42 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.header {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.logo {
+    margin-left: 60px;
+}
+.menu {
+    margin-right: 60px;
+}
+.menu a {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+}
+.menu :hover {
+    text-decoration: underline;
+}
+.logo img {
+    height: 70px;
+}

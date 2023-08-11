@@ -4,7 +4,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def appointments(request):
-    return HttpResponse('Aqui ficara a tela de agendamentos <br> <a href="/"> HOME </a>')
+    return render(request, 'appointments.html')
 
 def schedule(request): 
     return render(request, 'schedule.html')
