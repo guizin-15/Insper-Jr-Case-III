@@ -22,7 +22,7 @@ def edit_profile(request):
         if form.is_valid():
             user.first_name = form.cleaned_data['first_name']
             user.last_name = form.cleaned_data['last_name']
-            user.username = user.first_name + ' ' + user.last_name
+            # user.username = user.first_name + ' ' + user.last_name
             profile.first_name = form.cleaned_data['first_name']
             profile.last_name = form.cleaned_data['last_name']
             user.email = form.cleaned_data['email']

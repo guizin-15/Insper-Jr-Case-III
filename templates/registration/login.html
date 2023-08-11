@@ -60,7 +60,7 @@
     </div><!-- checkbox-container -->
 </form>
 {% if form.errors %}
-    <p style="color: #C0614B;">Usuário ou senha incorretos. Por favor, tente novamente.</p>
+    <p style="color: #C0614B;">Usuário ou senha incorretos. Por favor, tente novamente. {{form.message}}</p>
 {% endif %}
 </body>
 </html>
