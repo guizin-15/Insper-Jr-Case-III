@@ -1,56 +1,62 @@
+/* Estilos globais para o corpo do documento */
 body {
     background-color: white;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+    display: flex; /* Layout de flexbox para alinhamento vertical */
+    flex-direction: column; /* Itens dispostos em coluna */
+    justify-content: center; /* Centralizar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
 }
 
+/* Estilos para a imagem de perfil */
 .profile-img {
-    width: 100%; /* Altere aqui */
-    height: 300px; 
-    margin-top: -140px;
+    width: 100%; /* Largura completa */
+    height: 300px; /* Altura fixa */
+    margin-top: -140px; /* Deslocamento para ajustar a posição */
 }
 
+/* Estilos para a sombra da imagem */
 .img_shadow {
     display: flex;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.25);
-    z-index: -1; Coloca a sombra atrás da imagem */
 }
 
+/* Estilos para a caixa de formulários */
 .form-container {
-    background-color: rgb(200, 200, 200); /* Cor cinza clara */
+    background-color: rgb(200, 200, 200); /* Cor de fundo */
     border-radius: 20px; /* Cantos arredondados */
     padding: 20px; /* Espaçamento interno */
     margin-top: 20px; /* Espaçamento superior */
-    width: 100%; /* Largura da caixa de formulários */
+    width: 100%; /* Largura total */
     max-width: 800px; /* Largura máxima */
 }
 
+/* Estilos para um layout de colunas com espaçamento entre eles */
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaço entre colunas */
 }
 
+/* Estilos para as colunas de um layout de colunas */
 .column {
-    flex: 1;
-    text-align: left;
+    flex: 1; /* Distribuição igual de espaço disponível */
+    text-align: left; /* Alinhamento à esquerda do texto */
 }
 
+/* Estilos para cada item de formulário */
 .form-item {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Espaço entre elementos */
+    align-items: center; /* Centralizar verticalmente */
     font-size: 14px;
     padding: 5px 10px; /* Espaçamento interno */
     margin: 1px 1px; /* Espaçamento entre os itens */
 }
 
+/* Estilos para os rótulos dos itens de formulário */
 .form-item label {
     display: flex;
     justify-content: space-between;
@@ -59,26 +65,30 @@ body {
     padding: 0px 15px; /* Espaçamento interno */
 }
 
+/* Estilos para o texto auxiliar nos itens de formulário */
 .form-item p {
     margin: 0;
     color: #9e9e9e;
 }
 
+/* Estilos para rótulos */
 .label {
-    color: #f0f0f0; /* Cor cinza clara para os rótulos */
+    color: #f0f0f0; /* Cor dos rótulos */
 }
 
+/* Estilos para as caixas de entrada de texto */
 .input-box {
-    width: 100%;
+    width: 100%; /* Largura total */
     height: 45px;
-    border-radius: 100px;
-    border: none; /* Remova a borda interna */
-    padding: 0px 20px;
+    border-radius: 100px; /* Forma arredondada */
+    border: none; /* Sem borda */
+    padding: 0px 20px; /* Espaçamento interno */
     background-color: white;
     display: flex;
     align-items: center;
-    border: solid 1px #343F4B; /* Adicione a borda */
+    border: solid 1px #343F4B; /* Borda com cor */
 }
+
 
 .input-box p {
     font-size: 13px;
